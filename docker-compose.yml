@@ -1,0 +1,29 @@
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: book-network
+    volumes:
+      - db:/var/lib/postgresql/data postgres
+    ports:
+      - "5435:5432"
+    networks:
+      - spring-demo
+    restart: unless-stopped
+
+  maildev:
+    container_name: mail-dev
+    image: maildev/maildev
+    ports:
+      - 1080:1080
+      - 1025:1025
+
+networks:
+  spring-demo:
+    driver: bridge
+
+volumes:
+  db:
