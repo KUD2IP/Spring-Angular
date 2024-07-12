@@ -4,46 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dff5395-f9e1-4775-9da6-2fbf552d6658" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/BookBackApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/RegistrationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/config/BeansConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/email/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/email/EmailTemplateName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/role/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/role/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/security/JwtFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/security/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/security/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/user/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/user/TokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/user/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/resources/templates/activate_account.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/test/java/com/example/book_back/BookBackApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="0dff5395-f9e1-4775-9da6-2fbf552d6658" name="Changes" comment="start project">
+      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/config/BeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/security/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_back/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,41 +45,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.docker-compose.yml.maildev: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "HTTP Request.BookBackApplication | #1.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.BookBackApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/akkau/IdeaProjects/book/book_back/src/main/java/com/example/book_back",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml.maildev: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.BookBackApplication | #1.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BookBackApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/akkau/IdeaProjects/JWTAuthentication&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.book_back.email" />
       <recent name="com.example.book_back.auth" />
+      <recent name="com.example.book_back.email" />
       <recent name="com.example.book_back.security" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -201,11 +170,36 @@
       <updated>1720455324727</updated>
       <workItem from="1720455326056" duration="832000" />
       <workItem from="1720524909281" duration="11785000" />
-      <workItem from="1720701511964" duration="17290000" />
+      <workItem from="1720701511964" duration="17643000" />
+      <workItem from="1720776935339" duration="3107000" />
     </task>
+    <task id="LOCAL-00001" summary="start project">
+      <option name="closed" value="true" />
+      <created>1720728454148</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720728454148</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="start project" />
+    <option name="LAST_COMMIT_MESSAGE" value="start project" />
   </component>
 </project>

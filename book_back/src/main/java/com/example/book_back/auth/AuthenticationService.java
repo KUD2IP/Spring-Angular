@@ -2,7 +2,9 @@ package com.example.book_back.auth;
 
 import com.example.book_back.email.EmailService;
 import com.example.book_back.email.EmailTemplateName;
+import com.example.book_back.role.Role;
 import com.example.book_back.role.RoleRepository;
+import com.example.book_back.security.JwtService;
 import com.example.book_back.user.Token;
 import com.example.book_back.user.TokenRepository;
 import com.example.book_back.user.User;
@@ -10,11 +12,16 @@ import com.example.book_back.user.UserRepository;
 import jakarta.mail.MessagingException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.security.SecureRandom;
 import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.List;
 
 @Service
@@ -26,9 +33,11 @@ public class AuthenticationService {
     private final UserRepository userRepository;
     private final TokenRepository tokenRepository;
     private final EmailService emailService;
-
+    private final AuthenticationManager authenticationManager;
+    private final JwtService jwtService;
     @Value("${application.mailing.frontend.activation-url}")
     private String activationUrl;
+
 
     /**
      * Регистрация нового пользователя.
@@ -38,11 +47,11 @@ public class AuthenticationService {
      */
     public void register(RegistrationRequest request) throws MessagingException {
         // Получаем роль пользователя
-        var userRole = roleRepository.findByName("USER")
+        Role userRole = roleRepository.findByName("USER")
                 .orElseThrow(() -> new IllegalStateException("Роль пользователя не задана"));
 
         // Создаем нового пользователя
-        var user = User.builder()
+        User user = User.builder()
                 .firstName(request.getFirstName()) // Имя пользователя
                 .lastName(request.getLastName()) // Фамилия пользователя
                 .email(request.getEmail()) // Электронная почта пользователя
@@ -67,7 +76,7 @@ public class AuthenticationService {
      */
     private void sendValidationEmail(User user) throws MessagingException {
         // Генерируем и сохраняем токен активации
-        var newToken = generateAndSaveActivationToken(user);
+        String newToken = generateAndSaveActivationToken(user);
 
         // Отправляем электронное письмо
         emailService.sendEmail(
@@ -92,7 +101,7 @@ public class AuthenticationService {
         String generatedToken = generateActivationCode(6);
 
         // Создаем новый объект токена с заданными параметрами
-        var token = Token.builder()
+        Token token = Token.builder()
                 .token(generatedToken) // Устанавливаем сгенерированный токен
                 .createdAt(LocalDateTime.now()) // Устанавливаем текущую дату и время создания токена
                 .expiresAt(LocalDateTime.now().plusMinutes(15)) // Устанавливаем дату и время истечения срока действия токена
@@ -132,5 +141,76 @@ public class AuthenticationService {
 
         // Возвращаем сгенерированную строку
         return codeBuilder.toString();
+    }
+
+    /**
+     * Метод для аутентификации пользователя на основе предоставленных учетных данных.
+     *
+     * @param request объект с данными аутентификации
+     * @return объект ответа на аутентификацию с JWT-токеном
+     */
+    public AuthenticationResponse authenticate(AuthenticationRequest request) {
+        // Выполняем аутентификацию пользователя
+        var auth = authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(
+                        request.getEmail(),
+                        request.getPassword()
+                )
+        );
+
+        // Создаем мапу для хранения утверждений о пользователе
+        var claims = new HashMap<String, Object>();
+
+        // Получаем пользователя из успешной аутентификации
+        User user = ((User) auth.getPrincipal());
+
+        // Добавляем полное имя пользователя в мапу утверждений
+        claims.put("fullName", user.getFullName());
+
+        // Генерируем JWT-токен на основе утверждений и пользователя
+        String jwtToken = jwtService.generateToken(claims, user);
+
+        // Возвращаем объект ответа на аутентификацию с сгенерированным токеном
+        return AuthenticationResponse.builder()
+                .token(jwtToken).build();
+    }
+
+
+    /**
+     * Метод активации учетной записи пользователя.
+     *
+     * @param token Токен активации, отправленный пользователю на почту.
+     * @throws MessagingException Если произошла ошибка при отправке письма.
+     */
+    //    @Transactional
+    public void activateAccount(String token) throws MessagingException {
+        // Ищем токен активации в репозитории
+        Token savedToken = tokenRepository.findByToken(token)
+                .orElseThrow(() -> new RuntimeException("Неверный токен"));
+
+        // Проверяем, не истек ли срок действия токена
+        if(LocalDateTime.now().isAfter(savedToken.getExpiresAt())){
+            // Отправляем письмо для повторной активации
+            sendValidationEmail(savedToken.getUser());
+
+            // Выбрасываем исключение, уведомляя пользователя
+            throw new RuntimeException("Токен активации истек. На вашу почту отправлено новое письмо.");
+        }
+
+        // Ищем пользователя по ID из токена
+        User user = userRepository.findById(savedToken.getUser().getId())
+                .orElseThrow(() -> new UsernameNotFoundException("Пользователь не найден"));
+
+        // Активируем учетную запись пользователя
+        user.setEnabled(true);
+
+        // Сохраняем изменения в репозитории
+        userRepository.save(user);
+
+        // Обновляем дату и время активации токена
+        savedToken.setValidatedAt(LocalDateTime.now());
+
+        // Сохраняем изменения в репозитории
+        tokenRepository.save(savedToken);
     }
 }
