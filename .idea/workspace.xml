@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dff5395-f9e1-4775-9da6-2fbf552d6658" name="Changes" comment="start project">
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationResponse.java" afterDir="false" />
+    <list default="true" id="0dff5395-f9e1-4775-9da6-2fbf552d6658" name="Changes" comment="add activate account">
+      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/handler/BusinessErrorCodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/handler/ExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/handler/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/config/BeansConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/security/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +20,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -47,6 +44,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Docker.book_network: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.maildev: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
@@ -59,6 +57,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.BookBackApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ToolWindowServices.ShowToolbar&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -78,6 +77,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.book_back.handler" />
       <recent name="com.example.book_back.auth" />
       <recent name="com.example.book_back.email" />
       <recent name="com.example.book_back.security" />
@@ -117,6 +117,14 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="book_network: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="../book_network/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -153,6 +161,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.book_network: Compose Deployment" />
         <item itemvalue="HTTP Request.BookBackApplication | #1" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.maildev: Compose Deployment" />
@@ -171,7 +180,11 @@
       <workItem from="1720455326056" duration="832000" />
       <workItem from="1720524909281" duration="11785000" />
       <workItem from="1720701511964" duration="17643000" />
-      <workItem from="1720776935339" duration="3107000" />
+      <workItem from="1720776935339" duration="3858000" />
+      <workItem from="1720799166871" duration="301000" />
+      <workItem from="1720799491248" duration="1553000" />
+      <workItem from="1720807630163" duration="350000" />
+      <workItem from="1721074155129" duration="3859000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <option name="closed" value="true" />
@@ -181,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720728454148</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add activate account">
+      <option name="closed" value="true" />
+      <created>1720780824279</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720780824280</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +221,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start project" />
-    <option name="LAST_COMMIT_MESSAGE" value="start project" />
+    <MESSAGE value="add activate account" />
+    <option name="LAST_COMMIT_MESSAGE" value="add activate account" />
   </component>
 </project>
