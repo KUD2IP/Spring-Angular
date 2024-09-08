@@ -4,46 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dff5395-f9e1-4775-9da6-2fbf552d6658" name="Changes" comment="add handler exception">
-      <change afterPath="$PROJECT_DIR$/book-front.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/app.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/app.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/openapi/openapi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookSpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/common/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/common/PageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/config/ApplicationAuditAware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/feedback/Feedback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/history/BookTransactionHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="0dff5395-f9e1-4775-9da6-2fbf552d6658" name="Changes" comment="add book directory and created front module">
+      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookTransactionHistoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BorrowedBookResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/exception/OperationNotPermittedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/file/FileStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/file/FileUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/BookBackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/BookBackApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/config/BeansConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-front/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/config/ApplicationAuditAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/config/ApplicationAuditAware.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_back/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,15 +37,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "KUD2IP"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/KUD2IP/Spring-Angular.git",
+    "accountId": "126f3db4-231f-4146-9107-f4c874ed6c4a"
+  }
+}]]></component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
   <component name="ProjectId" id="2iyGIKpOGUoAELDka4pU1vSzUyt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -80,50 +66,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Docker.book_network: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.maildev: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.BookBackApplication | #1.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BookBackApplication.executor&quot;: &quot;Run&quot;,
-    &quot;ToolWindowServices.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/akkau/IdeaProjects/book&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.Angular CLI Server (book-front).executor&quot;: &quot;Run&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Docker.book_network: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.maildev: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "HTTP Request.BookBackApplication | #1.executor": "Run",
+    "JUnit.All in book.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BookBackApplication.executor": "Run",
+    "ToolWindowServices.ShowToolbar": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/akkau/IdeaProjects/book",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.Angular CLI Server (book-front).executor": "Run",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "C:\\Users\\akkau\\IdeaProjects\\book\\book-front\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.book_back.common" />
+      <recent name="com.example.book_back.file" />
+      <recent name="com.example.book_back.exception" />
       <recent name="com.example.book_back.book" />
+      <recent name="com.example.book_back.common" />
       <recent name="com.example.book_back.handler" />
-      <recent name="com.example.book_back.auth" />
-      <recent name="com.example.book_back.email" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\akkau\IdeaProjects\book\book_back\src\main\java\com\example\book_back" />
@@ -143,9 +135,17 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BookBackApplication">
+  <component name="RunManager" selected="npm.Angular CLI Server (book-front)">
     <configuration name="BookBackApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/BookBackApplication.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="All in book" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Angular Application (book-front)" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
@@ -192,19 +192,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="postgres" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="Angular CLI Server (book-front)" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/book-front/package.json" />
       <command value="run" />
@@ -217,13 +204,21 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in book" />
         <item itemvalue="Docker.book_network: Compose Deployment" />
         <item itemvalue="HTTP Request.BookBackApplication | #1" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.maildev: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -247,6 +242,16 @@
       <workItem from="1721345943782" duration="220000" />
       <workItem from="1722950061323" duration="2035000" />
       <workItem from="1723728812995" duration="5383000" />
+      <workItem from="1723757423386" duration="175000" />
+      <workItem from="1723823960493" duration="1093000" />
+      <workItem from="1723829036992" duration="550000" />
+      <workItem from="1724154172554" duration="2104000" />
+      <workItem from="1724256561269" duration="2093000" />
+      <workItem from="1724415988139" duration="3741000" />
+      <workItem from="1724582019207" duration="3403000" />
+      <workItem from="1725720116799" duration="386000" />
+      <workItem from="1725787069921" duration="861000" />
+      <workItem from="1725814344696" duration="362000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <option name="closed" value="true" />
@@ -272,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721125315846</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add book directory and created front module">
+      <option name="closed" value="true" />
+      <created>1723757513618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723757513618</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +307,7 @@
     <MESSAGE value="start project" />
     <MESSAGE value="add activate account" />
     <MESSAGE value="add handler exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="add handler exception" />
+    <MESSAGE value="add book directory and created front module" />
+    <option name="LAST_COMMIT_MESSAGE" value="add book directory and created front module" />
   </component>
 </project>
