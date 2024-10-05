@@ -5,16 +5,18 @@ import com.example.book_back.common.PageResponse;
 import com.example.book_back.exception.OperationNotPermittedException;
 import com.example.book_back.file.FileStorageService;
 import com.example.book_back.history.BookTransactionHistory;
+import com.example.book_back.history.BookTransactionHistoryRepository;
 import com.example.book_back.user.User;
-import jakarta.mail.internet.MimeBodyPart;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
@@ -24,6 +26,8 @@ import static com.example.book_back.book.BookSpecification.withOwnerId;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
+@Transactional
 public class BookService {
 
     private final BookRepository bookRepository;

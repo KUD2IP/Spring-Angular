@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+@import "font";
+
+:root{
+  --dark-color: #232335;
+  --light-color: #ffffff;
+  --primary-color: #4e5eff;
+}
+
+body{
+  font-family: "JetBrains Mono", sans-serif;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  background-image: url(/image/cloud-purple-gesture-violet-Tints-and-shades-electric-blue-magenta-sky-lens-flare-pattern-font-petal-space-horizon-ART-landscape-meteorological-phenomenon-graphics-slope-visual-arts-darkness-shadow-Peach-macro-phot.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skill-tag{
+  display: inline;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--light-color);
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 4px;
+  align-self: center;
+  justify-self: center;
+}
+
+.btn{
+  border: none;
+  background: var(--primary-color);
+  color: var(--light-color);
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.h6{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.subtitle{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.container{
+  display: grid;
+  width: 400px;
+  text-align: center;
+  margin: 50px auto;
+  background-color: var(--dark-color);
+  border-radius: 10px;
+  box-shadow: 0 0 100px var(--primary-color);
+  padding: 10px 20px;
+  font-weight: 700;
+  transition: transform 0.2s;
+}
+
+.exception{
+  display: grid;
+  width: 400px;
+  text-align: center;
+  margin: 10px auto;
+  margin-inside: 10px;
+  border-radius: 50px;
+  box-shadow:inset 0 0 10px red, 0 0 10px red;
+  padding: 1px 1px;
+  font-weight: 700;
+  color: #ff0000;
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+
+.exception {
+  opacity: 0;
+  animation: ani 2.5s forwards;
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+

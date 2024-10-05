@@ -1,0 +1,42 @@
+
+<div class="container">
+
+  <div class="main">
+    <h1>Login</h1>
+    <div class="exception" role="alert" *ngIf="errorMsg.length">
+      <p *ngFor="let msg of errorMsg">{{msg}}</p>
+    </div>
+    <h3>Enter your login credentials</h3>
+    <form action="">
+      <label for="username">
+        Email:
+      </label>
+      <input [(ngModel)]="authRequest.email"
+             type="email"
+             id="username"
+             name="username"
+             placeholder="Enter your Email" required>
+      <label for="password">
+        Password:
+      </label>
+      <input [(ngModel)]="authRequest.password"
+             type="password"
+             id="password"
+             name="password"
+             placeholder="Enter your Password" required>
+      <div class="wrap">
+        <button (click)="login()"
+                type="button">
+          Sign In
+        </button>
+      </div>
+    </form>
+    <div class="create">
+      <p>Not registered?
+        <a href="register">
+          Create an account
+        </a>
+      </p>
+    </div>
+  </div>
+</div>

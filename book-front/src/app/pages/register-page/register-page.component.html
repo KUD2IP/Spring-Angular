@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="main">
+    <h1>Registration</h1>
+    <div class="exception" role="alert" *ngIf="errorMsg.length">
+      <p *ngFor="let msg of errorMsg">{{msg}}</p>
+    </div>
+    <h3>Enter your credentials for registration</h3>
+    <form action="">
+      <label for="username">
+      Email:
+      </label>
+      <input [(ngModel)]="registerRequest.email"
+             type="email"
+             id="username"
+             name="username"
+             placeholder="Enter your Email" required>
+      <label for="firstname">
+        Firstname:
+      </label>
+      <input [(ngModel)]="registerRequest.firstName"
+             type="text"
+             id="firstname"
+             name="firstname"
+             placeholder="Enter your Firstname" required>
+      <label for="lastname">
+        Lastname:
+      </label>
+      <input [(ngModel)]="registerRequest.lastName"
+             type="text"
+             id="lastname"
+             name="lastname"
+             placeholder="Enter your Lastname" required>
+
+      <label for="password">
+        Password:
+      </label>
+      <input [(ngModel)]="registerRequest.password"
+             type="password"
+             id="password"
+             name="password"
+             placeholder="Enter your Password" required>
+      <div class="wrap">
+        <button (click)="register()"
+                type="button">
+            Sign Up
+        </button>
+      </div>
+    </form>
+    <div class="create">
+      <p>Registered? Sign in
+        <a href="login">
+          here
+        </a>
+      </p>
+    </div>
+  </div>
+</div>

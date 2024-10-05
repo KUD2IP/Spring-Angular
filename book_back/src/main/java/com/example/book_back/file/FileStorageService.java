@@ -21,8 +21,9 @@ import static java.io.File.separator;
 @RequiredArgsConstructor
 public class FileStorageService {
 
-    @Value("${application.file.upload.photos-output-path}")
+    @Value("${application.file.uploads.photos-output-path}")
     private String fileUploadPath;
+
     public String saveFile(
             @Nonnull MultipartFile sourceFile,
             @Nonnull Long userId) {
