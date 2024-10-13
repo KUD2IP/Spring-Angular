@@ -9,9 +9,6 @@ import {NgForOf, NgIf} from "@angular/common";
 @Component({
   selector: 'app-register-page',
   standalone: true,
-  // imports: [
-  //   FormsModule
-  // ],
   templateUrl: './register-page.component.html',
   imports: [
     FormsModule,

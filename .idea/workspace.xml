@@ -5,106 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dff5395-f9e1-4775-9da6-2fbf552d6658" name="Changes" comment="finished backend and authenticated user in frontend">
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-BoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-ExtraBold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-ExtraBoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-ExtraLight.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-ExtraLightItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-Italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-LightItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-MediumItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-SemiBold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-SemiBoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-Thin.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/public/fonts/JetBrainsMono-ThinItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/main-page/main-page.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/main-page/main-page.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/main-page/main-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/pages/activate-account-page/activate-account-page.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/pages/activate-account-page/activate-account-page.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/pages/activate-account-page/activate-account-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/pages/login-page/login-page.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/pages/login-page/login-page.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/pages/login-page/login-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/pages/register-page/register-page.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/pages/register-page/register-page.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/pages/register-page/register-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/api-configuration.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/api.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/base-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/authentication/authenticate.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/authentication/confirm.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/authentication/register.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/approve-return-borrow-book.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/borrow-book.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-all-books-by-owner.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-all-books.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-all-borrowed-books.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-all-returned-books.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-book-by-id.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/return-borrow-book.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/save-book.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/update-archived-status.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/update-shareable-status.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/uploaad-book-cover-picture.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/feedback/find-all-feedbacks-by-book.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/feedback/save-feedback.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/guard/auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/interceptor/http-token.interceptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/models.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/models/authentication-request.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/models/authentication-response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/models/book-request.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/models/book-response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/models/borrowed-book-response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/models/feedback-request.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/models/feedback-response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/models/page-response-book-response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/models/page-response-borrowed-book-response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/models/page-response-feedback-response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/models/registration-request.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/request-builder.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/services.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/services/authentication.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/services/book.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/services/feedback.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/strict-http-response.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/app/services/token/token.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-front/src/font.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/exception/ActivationTokenException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/feedback/FeedbackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/feedback/FeedbackMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/feedback/FeedbackRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/feedback/FeedbackRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/feedback/FeedbackResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/feedback/FeedbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/history/BookTransactionHistoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/book-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/book.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/book-card/book-card.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/book-card/book-card.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/book-card/book-card.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/menu/menu.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/menu/menu.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/menu/menu.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/rating/rating.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/rating/rating.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/rating/rating.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/book-details-page/book-details-page.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/book-details-page/book-details-page.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/book-details-page/book-details-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/book-list-page/book-list-page.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/book-list-page/book-list-page.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/book-list-page/book-list-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/borrowed-book-page/borrowed-book-page.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/borrowed-book-page/borrowed-book-page.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/borrowed-book-page/borrowed-book-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/manage-book-page/manage-book-page.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/manage-book-page/manage-book-page.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/manage-book-page/manage-book-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/my-books-page/my-books-page.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/my-books-page/my-books-page.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/my-books-page/my-books-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/returned-book-page/returned-book-page.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/returned-book-page/returned-book-page.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/returned-book-page/returned-book-page.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/app.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/app.routes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/openapi/openapi.json" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/openapi/openapi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookTransactionHistoryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/config/BeansConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/feedback/Feedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/feedback/Feedback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/file/FileStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/file/FileStorageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/security/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/main-page/main-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/main-page/main-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/main-page/main-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/main-page/main-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-front/src/app/pages/activate-account-page/activate-account-page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/pages/activate-account-page/activate-account-page.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-front/src/app/pages/register-page/register-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/pages/register-page/register-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-front/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/auth/AuthenticationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,51 +95,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Docker.book_network: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.maildev: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "HTTP Request.BookBackApplication | #1.executor": "Run",
-    "JUnit.All in book.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.BookBackApplication.executor": "Run",
-    "ToolWindowServices.ShowToolbar": "false",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/akkau/IdeaProjects/book/book-front/public/image",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.Angular CLI Server (book-front).executor": "Run",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "C:\\Users\\akkau\\IdeaProjects\\book\\book-front\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.book_network: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.maildev: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.BookBackApplication | #1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in book.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BookBackApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ToolWindowServices.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/akkau/IdeaProjects/book/book-front/public/image&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.Angular CLI Server (book-front).executor&quot;: &quot;Run&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\akkau\\IdeaProjects\\book\\book-front\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.book_back.feedback" />
@@ -215,11 +155,11 @@
       <recent name="C:\Users\akkau\IdeaProjects\book" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\akkau\IdeaProjects\book\book-front\src\app\modules\book" />
+      <recent name="C:\Users\akkau\IdeaProjects\book\book-front\src\app\modules" />
       <recent name="C:\Users\akkau\IdeaProjects\book\book-front\src\app\services\token" />
       <recent name="C:\Users\akkau\IdeaProjects\book\book-front\src\app" />
       <recent name="C:\Users\akkau\IdeaProjects\book\book-front\src\app\services\fn\authentication" />
-      <recent name="C:\Users\akkau\IdeaProjects\book\book-front\src\app\services\fn" />
-      <recent name="C:\Users\akkau\IdeaProjects\book\book-front\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -354,7 +294,11 @@
       <workItem from="1725886505673" duration="300000" />
       <workItem from="1727367607383" duration="1575000" />
       <workItem from="1727376552637" duration="84000" />
-      <workItem from="1728120104962" duration="23425000" />
+      <workItem from="1728120104962" duration="23594000" />
+      <workItem from="1728215472466" duration="5630000" />
+      <workItem from="1728226740429" duration="1455000" />
+      <workItem from="1728809799227" duration="8433000" />
+      <workItem from="1728823218627" duration="21606000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <option name="closed" value="true" />
@@ -396,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725814735435</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finished backend and authenticated user in frontend">
+      <option name="closed" value="true" />
+      <created>1728151939483</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728151939484</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,5 +374,15 @@
     <MESSAGE value="customize book" />
     <MESSAGE value="finished backend and authenticated user in frontend" />
     <option name="LAST_COMMIT_MESSAGE" value="finished backend and authenticated user in frontend" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="io.jsonwebtoken.ExpiredJwtException" package="io.jsonwebtoken" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -170,7 +170,7 @@ public class AuthenticationService {
         // Генерируем JWT-токен на основе утверждений и пользователя
         String jwtToken = jwtService.generateToken(claims, user);
 
-        // Возвращаем объект ответа на аутентификацию с сгенерированным токеном
+        // Возвращаем объект ответа на аутентификацию с генерированным токеном
         return AuthenticationResponse.builder()
                 .token(jwtToken).build();
     }

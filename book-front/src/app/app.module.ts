@@ -1,12 +1,13 @@
 import {NgModule} from "@angular/core";
 import {FormsModule} from "@angular/forms";
-import {BrowserModule} from "@angular/platform-browser";
+import {bootstrapApplication, BrowserModule} from "@angular/platform-browser";
 import {HTTP_INTERCEPTORS, HttpClient, HttpClientModule} from "@angular/common/http";
 import {CodeInputModule} from "angular-code-input";
 import {ApiModule} from "./services/api.module";
 import {HttpTokenInterceptor} from "./services/interceptor/http-token.interceptor";
 import {AppRoutingModule} from "./app-routing.module";
 import {AppComponent} from "./app.component";
+import {ToastrModule} from "ngx-toastr";
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import {AppComponent} from "./app.component";
     FormsModule,
     HttpClientModule,
     CodeInputModule,
+    ToastrModule.forRoot(),
     ApiModule.forRoot({rootUrl: 'http://localhost:8088/api/v1/'})
   ],
   providers: [
