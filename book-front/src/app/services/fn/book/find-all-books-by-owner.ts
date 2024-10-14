@@ -32,4 +32,4 @@ export function findAllBooksByOwner(http: HttpClient, rootUrl: string, params?: 
   );
 }
 
-findAllBooksByOwner.PATH = '/books/owner';
+findAllBooksByOwner.PATH = 'books/owner';

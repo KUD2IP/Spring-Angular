@@ -32,4 +32,4 @@ export function findAllBorrowedBooks(http: HttpClient, rootUrl: string, params?:
   );
 }
 
-findAllBorrowedBooks.PATH = '/books/borrowed';
+findAllBorrowedBooks.PATH = 'books/borrowed';

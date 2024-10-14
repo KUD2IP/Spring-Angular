@@ -8,6 +8,7 @@ import com.example.book_back.history.BookTransactionHistory;
 import com.example.book_back.history.BookTransactionHistoryRepository;
 import com.example.book_back.user.User;
 import jakarta.persistence.EntityNotFoundException;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
@@ -25,7 +26,6 @@ import java.util.Objects;
 import static com.example.book_back.book.BookSpecification.withOwnerId;
 
 @Service
-@RequiredArgsConstructor
 @Slf4j
 @Transactional
 public class BookService {
@@ -33,7 +33,14 @@ public class BookService {
     private final BookRepository bookRepository;
     private final BookMapper bookMapper;
     private final BookTransactionHistoryRepository bookTransactionHistoryRepository;
-    private FileStorageService fileStorageService;
+    private final FileStorageService fileStorageService;
+
+    public BookService(BookRepository bookRepository, BookMapper bookMapper, BookTransactionHistoryRepository bookTransactionHistoryRepository, FileStorageService fileStorageService) {
+        this.bookRepository = bookRepository;
+        this.bookMapper = bookMapper;
+        this.bookTransactionHistoryRepository = bookTransactionHistoryRepository;
+        this.fileStorageService = fileStorageService;
+    }
 
     /**
      * Сохраняет новую книгу в базе данных с указанными данными.

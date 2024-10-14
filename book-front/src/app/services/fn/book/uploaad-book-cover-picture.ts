@@ -35,4 +35,4 @@ export function uploaadBookCoverPicture(http: HttpClient, rootUrl: string, param
   );
 }
 
-uploaadBookCoverPicture.PATH = '/books/cover/{book-id}';
+uploaadBookCoverPicture.PATH = 'books/cover/{book-id}';

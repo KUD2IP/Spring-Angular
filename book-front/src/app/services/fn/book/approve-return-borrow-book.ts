@@ -29,4 +29,4 @@ export function approveReturnBorrowBook(http: HttpClient, rootUrl: string, param
   );
 }
 
-approveReturnBorrowBook.PATH = '/books/borrow/return/approve/{book-id}';
+approveReturnBorrowBook.PATH = 'books/borrow/return/approve/{book-id}';

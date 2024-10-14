@@ -32,4 +32,4 @@ export function findAllBooks(http: HttpClient, rootUrl: string, params?: FindAll
   );
 }
 
-findAllBooks.PATH = '/books';
+findAllBooks.PATH = 'books';

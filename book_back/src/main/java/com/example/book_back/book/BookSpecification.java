@@ -16,6 +16,6 @@ public class BookSpecification {
             // Получаем атрибут "owner" из корневого объекта запроса
             // и затем получаем атрибут "id" из атрибута "owner".
             // Затем мы сравниваем значение атрибута "id" с переданным идентификатором владельца.
-           criteriaBuilder.equal(root.get("owner").get("id"), ownerId);
+           criteriaBuilder.equal(root.get("owner").get("id").as(Long.class), ownerId);
     }
 }

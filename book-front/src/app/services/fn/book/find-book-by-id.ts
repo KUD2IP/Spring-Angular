@@ -28,4 +28,4 @@ export function findBookById(http: HttpClient, rootUrl: string, params?: FindBoo
   );
 }
 
-findBookById.PATH = '/books/{bookId}';
+findBookById.PATH = 'books/{bookId}';
