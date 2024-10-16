@@ -4,7 +4,7 @@ import {BookService} from "../../../../services/services/book.service";
 import {Router, RouterLink} from "@angular/router";
 import {BookResponse} from "../../../../services/models/book-response";
 import {BookCardComponent} from "../../components/book-card/book-card.component";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-my-books-page',
@@ -12,7 +12,8 @@ import {NgForOf} from "@angular/common";
   imports: [
     BookCardComponent,
     NgForOf,
-    RouterLink
+    RouterLink,
+    NgIf
   ],
   templateUrl: './my-books-page.component.html',
   styleUrl: './my-books-page.component.scss'

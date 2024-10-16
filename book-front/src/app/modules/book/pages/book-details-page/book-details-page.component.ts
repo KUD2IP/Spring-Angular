@@ -5,15 +5,16 @@ import {BookService} from "../../../../services/services/book.service";
 import {FeedbackService} from "../../../../services/services/feedback.service";
 import {ActivatedRoute} from "@angular/router";
 import {RatingComponent} from "../../components/rating/rating.component";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-book-details-page',
   standalone: true,
-  imports: [
-    RatingComponent,
-    NgForOf
-  ],
+    imports: [
+        RatingComponent,
+        NgForOf,
+        NgIf
+    ],
   templateUrl: './book-details-page.component.html',
   styleUrl: './book-details-page.component.scss'
 })

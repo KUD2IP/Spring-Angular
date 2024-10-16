@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import "font";
-@import "bootstrap/dist/css/bootstrap.min.css";
 
 :root{
   --dark-color: #232335;
@@ -10,6 +9,7 @@
 
 body{
   font-family: "JetBrains Mono", sans-serif;
+  margin: 0 0 0 0;
   background-color: var(--dark-color);
   color: var(--light-color);
   background-image: url(/image/cloud-purple-gesture-violet-Tints-and-shades-electric-blue-magenta-sky-lens-flare-pattern-font-petal-space-horizon-ART-landscape-meteorological-phenomenon-graphics-slope-visual-arts-darkness-shadow-Peach-macro-phot.jpg);
@@ -86,8 +86,58 @@ body{
   animation: ani 2.5s forwards;
 }
 
+.head-menu{
+  margin: 0 0 0 0;
+}
+
 @keyframes ani {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
+
+.book{
+  display: flex;
+  text-align: center;
+  margin: 20px  auto;
+}
+
+app-book-card{
+  background-color: var(--dark-color);
+  box-shadow: var(--primary-color) 10px 0 15px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.page{
+  text-align: center;
+  margin: 20px auto;
+
+}
+
+.page-item{
+  list-style: none;
+  color: var(--light-color);
+  font-size: 14px;
+  border-radius: 50px;
+  margin: 5px 4px;
+}
+
+.page-item:has(.ng-hides){
+  display: none;
+}
+
+.pagination{
+  border-radius: 80px;
+  background: var(--primary-color);
+  color: var(--light-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.page-link{
+  color: var(--light-color);
+  text-decoration: none;
+}
+
 

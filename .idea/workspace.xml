@@ -4,26 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dff5395-f9e1-4775-9da6-2fbf552d6658" name="Changes" comment="realization front for book">
+    <list default="true" id="0dff5395-f9e1-4775-9da6-2fbf552d6658" name="Changes" comment="refactor backend (BookService)">
+      <change afterPath="$PROJECT_DIR$/app/uploads/users/1/1728908264606.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/uploads/users/1/1728908298970.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/uploads/users/1/1728908416807.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/uploads/users/1/1728908447963.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/uploads/users/1/1728908547390.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/book/approve-return-borrow-book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/approve-return-borrow-book.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/book/borrow-book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/borrow-book.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-all-books-by-owner.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-all-books-by-owner.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-all-books.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-all-books.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-all-borrowed-books.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-all-borrowed-books.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-all-returned-books.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-all-returned-books.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-book-by-id.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/find-book-by-id.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/book/return-borrow-book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/return-borrow-book.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/book/save-book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/save-book.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/book/update-archived-status.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/update-archived-status.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/book/update-shareable-status.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/update-shareable-status.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/book/uploaad-book-cover-picture.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/book/uploaad-book-cover-picture.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/book/BookSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/common/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/book_back/src/main/java/com/example/book_back/common/BaseEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,51 +61,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Docker.book_network: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.maildev: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "HTTP Request.BookBackApplication | #1.executor": "Run",
-    "JUnit.All in book.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.BookBackApplication.executor": "Run",
-    "ToolWindowServices.ShowToolbar": "false",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/akkau/IdeaProjects/book/book-front/public/image",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.Angular CLI Server (book-front).executor": "Run",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "C:\\Users\\akkau\\IdeaProjects\\book\\book-front\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.book_network: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.maildev: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.BookBackApplication | #1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in book.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BookBackApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ToolWindowServices.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/akkau/IdeaProjects/book/book-front/public/image&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.Angular CLI Server (book-front).executor&quot;: &quot;Run&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\akkau\\IdeaProjects\\book\\book-front\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.book_back.feedback" />
@@ -278,7 +265,10 @@
       <workItem from="1728226740429" duration="1455000" />
       <workItem from="1728809799227" duration="8433000" />
       <workItem from="1728823218627" duration="21826000" />
-      <workItem from="1728897252680" duration="10406000" />
+      <workItem from="1728897252680" duration="11708000" />
+      <workItem from="1728918680332" duration="1082000" />
+      <workItem from="1728920035493" duration="21000" />
+      <workItem from="1729095444905" duration="1681000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <option name="closed" value="true" />
@@ -336,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728853605588</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactor backend (BookService)">
+      <option name="closed" value="true" />
+      <created>1728908879512</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728908879512</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +360,8 @@
     <MESSAGE value="customize book" />
     <MESSAGE value="finished backend and authenticated user in frontend" />
     <MESSAGE value="realization front for book" />
-    <option name="LAST_COMMIT_MESSAGE" value="realization front for book" />
+    <MESSAGE value="refactor backend (BookService)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor backend (BookService)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
