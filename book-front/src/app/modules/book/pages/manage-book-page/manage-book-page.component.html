@@ -1,11 +1,11 @@
-<div class="p-2">
+<div class="container">
   <h2>Manage my book</h2>
-  <hr>
+<!--  <hr>-->
   <div class="exception" role="alert" *ngIf="errorMsg?.length">
     <p class="p-0 m-0" *ngFor="let msg of errorMsg">{{msg}}</p>
   </div>
-  <div class="container">
-    <img class="file-image" width="100%" height="100%" [src]=" selectedPicture || '/image/shab.png'" alt="">
+  <form action="">
+    <img class="file-image"  [src]=" selectedPicture || '/image/shab.png'" alt="">
     <div class="image-input">
       <label for="formFile" class="form-label">Cover</label>
       <input
@@ -48,12 +48,10 @@
     </div>
     <div class="d-flex justify-content-end gap-2 col-12">
       <button (click)="saveBook()" type="submit" class="btn btn-outline-primary">
-        <i class="fas fa-save"></i>&nbsp;Save
+        &nbsp;Save
       </button>
-      <a href="/books/my-books">
-        <button class="btn">Cancel</button>
-      </a>
+        <a class="btn" href="/books/my-books">Cancel</a>
     </div>
-  </div>
+  </form>
 </div>
 

@@ -2,7 +2,7 @@
 <hr>
 <div class="d-flex flex-column col-6" style="background-color: var(--primary-color)" *ngIf="selectedBook">
   <h2>Return and share feedback</h2>
-  <div class="d-flex flex-column col-12">
+  <div class="container">
     <div class="d-flex">
       <div class="col-1">
         <strong>Title</strong>
@@ -73,7 +73,7 @@
       <th scope="col">Author</th>
       <th scope="col">ISBN</th>
       <th scope="col">Rate</th>
-      <th scope="col"><i class="fas fa-cogs"></i></th>
+      <th scope="col">╰┈➤</th>
     </tr>
     </thead>
     <tbody>
@@ -83,12 +83,12 @@
       <td>{{ book.title }}</td>
       <td>{{ book.authorName }}</td>
       <td>{{ book.isbn }}</td>
-      <td><i class="fas fa-star text-warning"></i> {{ book.rate }}</td>
+      <td> ★ {{ book.rate }}</td>
       <td>
         <div class="d-flex gap-2">
-          <i *ngIf="book.returned" class="fa-regular fa-paper-plane text-primary"></i>
-          <i *ngIf="!book.returned" (click)="returnBorrowedBook(book)" class="fa-solid fa-paper-plane text-success"></i>
-          <i class="fa-solid fa-circle-check" [class.text-success]="book.returnApproved"></i>
+          <a *ngIf="book.returned" >╰┈➤</a>
+          <a *ngIf="!book.returned" (click)="returnBorrowedBook(book)" style="cursor: pointer">╰┈➤</a>
+          <a [class.text-success]="book.returnApproved" style="cursor: pointer">╰┈➤</a>
         </div>
       </td>
     </tr>

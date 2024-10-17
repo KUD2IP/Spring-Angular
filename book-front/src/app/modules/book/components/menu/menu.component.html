@@ -2,23 +2,26 @@
   <ul>
     <li>
       <a  routerLink="/books">
-        <i class="fas fa-home-alt"></i>&nbsp;Home
+        &nbsp;Home
       </a>
     </li>
     <li>
       <a  routerLink="my-books">
-        <i class="fas fa-book"></i>&nbsp;My books
+        &nbsp;My books
       </a>
     </li>
     <li>
       <a  routerLink="my-returned-books">
-        <i class="fas fa-book"></i>&nbsp;My returned books
+        &nbsp;My returned books
       </a>
     </li>
     <li>
       <a  routerLink="my-borrowed-books">
-        <i class="fas fa-book"></i>&nbsp;Borrowed books
+       &nbsp;Borrowed books
       </a>
     </li>
+    <div class="btn-logout">
+      <button class="btn" type="submit" (click)="logout()">Logout</button>
+    </div>
   </ul>
 </div>

@@ -1,0 +1,18 @@
+.rating {
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  font-size: 30px;
+}
+
+.rating a {
+  float: right;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ddd;
+}

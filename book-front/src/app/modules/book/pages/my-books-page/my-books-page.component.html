@@ -11,6 +11,8 @@
       *ngFor="let book of bookResponse.content"
       [book]="book"
       [manage]="true"
+      [class.green-shadow]="book.shareable"
+      [class.red-shadow]="book.archived"
       (archive)="archiveBook($event)"
       (share)="shareBook($event)"
       (edit)="editBook($event)"

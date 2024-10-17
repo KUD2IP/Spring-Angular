@@ -18,6 +18,21 @@ li a {
   text-decoration: none;
 }
 
+.btn-logout{
+  margin-right: 10px;
+  margin-top: 5px;
+  float: right;
+}
+
+button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  font-size: 16px;
+}
+
+
 li a:hover {
   background-color: #151d65;
 }

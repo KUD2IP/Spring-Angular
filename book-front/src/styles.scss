@@ -45,12 +45,14 @@ input {
 
 .btn{
   border: none;
+  text-decoration: none;
   background: var(--primary-color);
   color: var(--light-color);
-  padding: 10px 20px;
+  padding: 15px 25px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
+  border-radius: 30px;
 }
 
 .h6{
@@ -67,7 +69,7 @@ input {
 
 .container{
   display: grid;
-  width: 400px;
+  width: 500px;
   text-align: center;
   margin: 50px auto;
   background-color: var(--dark-color);
@@ -77,6 +79,7 @@ input {
   font-weight: 700;
   transition: transform 0.2s;
 }
+
 
 .exception{
   display: grid;
@@ -160,5 +163,6 @@ app-book-card{
 
 thead{
   width: 100%;
+  border-color: white;
 }
 
