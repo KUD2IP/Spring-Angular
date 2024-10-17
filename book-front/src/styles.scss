@@ -19,6 +19,18 @@ body{
   background-size: cover;
 }
 
+input {
+  display: block;
+  background-color: #232335;
+  width: 100%;
+  color: var(--light-color);
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
 .skill-tag{
   display: inline;
   padding: 4px 8px;
@@ -140,4 +152,13 @@ app-book-card{
   text-decoration: none;
 }
 
+.table{
+  width: 100%;
+  background: var(--primary-color);
+  padding: 10px 10px;
+}
+
+thead{
+  width: 100%;
+}
 
