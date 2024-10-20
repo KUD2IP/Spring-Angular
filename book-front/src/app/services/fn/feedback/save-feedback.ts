@@ -30,4 +30,4 @@ export function saveFeedback(http: HttpClient, rootUrl: string, params: SaveFeed
   );
 }
 
-saveFeedback.PATH = '/feedbacks';
+saveFeedback.PATH = 'feedbacks';

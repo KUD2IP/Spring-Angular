@@ -34,4 +34,4 @@ export function findAllFeedbacksByBook(http: HttpClient, rootUrl: string, params
   );
 }
 
-findAllFeedbacksByBook.PATH = '/feedbacks/book/{book-id}';
+findAllFeedbacksByBook.PATH = 'feedbacks/book/{book-id}';

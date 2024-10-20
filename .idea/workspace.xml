@@ -5,28 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dff5395-f9e1-4775-9da6-2fbf552d6658" name="Changes" comment="refactor fronted">
-      <change afterPath="$PROJECT_DIR$/app/uploads/users/1/1729153726049.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/uploads/users/1/1729161248396.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/uploads/users/1/1729163713627.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/uploads/users/1/1729175509354.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/uploads/users/1/1729175606330.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/uploads/users/1/1729181420969.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/uploads/users/1/1729183298450.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/uploads/users/2/1729163493665.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/uploads/users/1/1729422700154.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/components/book-card/book-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/book-card/book-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/components/book-card/book-card.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/book-card/book-card.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/components/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/menu/menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/components/menu/menu.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/menu/menu.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/components/rating/rating.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/rating/rating.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/components/rating/rating.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/components/rating/rating.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/borrowed-book-page/borrowed-book-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/borrowed-book-page/borrowed-book-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/borrowed-book-page/borrowed-book-page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/borrowed-book-page/borrowed-book-page.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/manage-book-page/manage-book-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/manage-book-page/manage-book-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/manage-book-page/manage-book-page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/manage-book-page/manage-book-page.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/my-books-page/my-books-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/my-books-page/my-books-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/my-books-page/my-books-page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/my-books-page/my-books-page.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/returned-book-page/returned-book-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/returned-book-page/returned-book-page.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/returned-book-page/returned-book-page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/modules/book/pages/returned-book-page/returned-book-page.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-front/src/app/pages/activate-account-page/activate-account-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/pages/activate-account-page/activate-account-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/feedback/find-all-feedbacks-by-book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/feedback/find-all-feedbacks-by-book.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-front/src/app/services/fn/feedback/save-feedback.ts" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/app/services/fn/feedback/save-feedback.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-front/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/book-front/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -288,7 +278,9 @@
       <workItem from="1729095444905" duration="16077000" />
       <workItem from="1729153516066" duration="4321000" />
       <workItem from="1729159806376" duration="4705000" />
-      <workItem from="1729175010058" duration="9191000" />
+      <workItem from="1729175010058" duration="9569000" />
+      <workItem from="1729338354829" duration="862000" />
+      <workItem from="1729422046713" duration="7962000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <option name="closed" value="true" />
@@ -370,7 +362,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729164660209</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="refactor fronted">
+      <option name="closed" value="true" />
+      <created>1729184755859</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729184755860</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
